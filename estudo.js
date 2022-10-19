@@ -1,5 +1,5 @@
 let tabuada = 22;
-let nome = "Rodrigo";
+let nome = "Nicolas";
 
 function escreva(){
     document.write("Tabuada do " + tabuada + "<br>")
@@ -40,5 +40,21 @@ function escreva(){
      let j = document.getElementById("Juros").value;
      let r = c * (1 + (j/100));
      document.write("Resultado:  " + r);
+ }
+
+ let op = "";
+ function operacao(ope){
+    op = ope;
+ }
+ function calcule(){
+    let v1 = document.getElementById("v1").value;
+    let v2 = document.getElementById("v1").value;
+    let r = 0;
+
+    if(op == "+"){
+        r = Number(v1) + Number(v2);
+    }
+    document.getElementById("resultado").innerHTML = r;
+
  }
 
